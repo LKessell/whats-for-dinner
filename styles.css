@@ -1,7 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-image: url("assets/burger-friends.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   margin: 0px;
 }
@@ -14,6 +14,19 @@ nav {
 h1 {
   font-size: 24px;
   margin: 0px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+section {
+  background-color: rgba(225, 225, 225, .9);
+  height: 400px;
+  width: 500px;
 }
 
 
