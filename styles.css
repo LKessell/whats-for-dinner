@@ -3,8 +3,18 @@ body {
   background-image: url("assets/burger-friends.jpg");
   background-size: contain;
   background-repeat: no-repeat;
+  margin: 0px;
 }
 
+nav {
+  background-color: #0fb9b1;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0px;
+}
 
 
 
