@@ -39,6 +39,11 @@ legend {
   font-weight: bold;
 }
 
+label {
+  font-size: 20px;
+  line-height: 48px;
+}
+
 .hidden {
   display: none;
 }
