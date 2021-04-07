@@ -29,6 +29,25 @@ section {
   width: 500px;
 }
 
+.hidden {
+  display: none;
+}
+
+.random-dish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cookpot {
+  width: 150px;
+  height: 148px;
+}
+
+.dish-prompt {
+  display: none;
+}
+
 
 
 /* COLORS
