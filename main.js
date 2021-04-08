@@ -6,18 +6,23 @@ var cookpot = document.querySelector('.cookpot');
 
 letsCookBtn.addEventListener('click', function() {
   event.preventDefault();
-  sayBtns();
+  getSelectedDish();
   hideCookpot();
 });
 
-function sayBtns() {
+function getSelectedDish() {
   for (var i = 0; i < radioButtons.length; i++) {
     if (radioButtons[i].checked) {
-      console.log(radioButtons[i]);
+      return radioButtons[i].value;
     }
   }
 }
 
 function hideCookpot() {
   cookpot.classList.add('hidden');
+}
+
+function getRandomDish(dishType) {
+  var randomDish = dishType[Math.floor(Math.random() * dishType.length)];
+  return randomDish;
 }
