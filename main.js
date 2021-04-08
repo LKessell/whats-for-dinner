@@ -8,15 +8,17 @@ var cookpot = document.querySelector('.cookpot');
 
 letsCookBtn.addEventListener('click', function() {
   event.preventDefault();
-  getSelectedDish();
   hideCookpot();
   showPrompt();
+  getDishSelection(); //returns checked array
 });
 
-function getSelectedDish() {
+function getDishSelection() {
   for (var i = 0; i < radioButtons.length; i++) {
     if (radioButtons[i].checked) {
-      return radioButtons[i].value;
+      // returning respective checked array
+      console.log(eval(radioButtons[i].value));
+      return eval(radioButtons[i].value);
     }
   }
 }
