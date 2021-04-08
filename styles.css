@@ -1,10 +1,86 @@
-/* font-family: 'Roboto', sans-serif;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("assets/burger-friends.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
 
-COLORS
+nav {
+  background-color: #0fb9b1;
+  padding: 22px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+section {
+  background-color: rgba(225, 225, 225, .9);
+  height: 420px;
+  width: 520px;
+}
+
+fieldset {
+  border: none;
+  margin: 75px 0px 0px 20px;
+}
+
+legend {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+label {
+  font-size: 20px;
+  line-height: 48px;
+}
+
+.hidden {
+  display: none;
+}
+
+.asterisk {
+  color: #ee5253;
+  font-size: 24px;
+  vertical-align: super;
+}
+
+.submit {
+  background-color: #0fb9b1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 50px 10px 50px;
+  font-size: 16px;
+}
+
+.random-dish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cookpot {
+  width: 150px;
+  height: 148px;
+}
+
+.dish-prompt {
+  display: none;
+}
+
+
+
+/* COLORS
 teal - #0fb9b1;
 frosted white - rgba(225, 225, 225, .9);
 grey - #95a5a6;
-red - #ee5253
-
-*/
-
+red - #ee5253 */

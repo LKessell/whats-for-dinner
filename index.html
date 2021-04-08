@@ -4,7 +4,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    
+    <nav>
+      <h1>What's for Dinner?</h1>
+    </nav>
+    <main>
+      <section class="dish-type">
+        <form>
+          <fieldset>
+           <legend>What are you looking for?<span class="asterisk">*</span></legend>
+           <input type="radio" name="dish_type" value="side" id="side">
+           <label for="side">Side</label>
+           <input type="radio" name="dish_type" value="main" id="main">
+           <label for="main">Main Dish</label>
+           <input type="radio" name="dish_type" value="dessert" id="dessert">
+           <label for="dessert">Dessert</label>
+           <button class="submit">LET'S COOK!</button>
+          </fieldset>
+        </form>
+      </section>
+      <section class="random-dish">
+        <p class="dish-prompt">You should make:</p>
+        <p class="dish-result"></p>
+        <img src="assets/cookpot.svg" alt="a cookput graphic" class="cookpot">
+      </section>
+    </main>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
