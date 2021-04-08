@@ -1,10 +1,13 @@
 var letsCookBtn = document.querySelector('.submit');
 var radioButtons = document.querySelectorAll('input[name="dish_type"]');
 
+var cookpot = document.querySelector('.cookpot');
+
 
 letsCookBtn.addEventListener('click', function() {
   event.preventDefault();
   sayBtns();
+  hideCookpot();
 });
 
 function sayBtns() {
@@ -13,4 +16,8 @@ function sayBtns() {
       console.log(radioButtons[i]);
     }
   }
+}
+
+function hideCookpot() {
+  cookpot.classList.add('hidden');
 }
