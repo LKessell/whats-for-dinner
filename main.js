@@ -1,5 +1,7 @@
 var letsCookBtn = document.querySelector('.submit');
 var radioButtons = document.querySelectorAll('input[name="dish_type"]');
+var dishPrompt = document.querySelector('.dish-prompt');
+var dishResult = document.querySelector('.dish-result');
 
 var cookpot = document.querySelector('.cookpot');
 
@@ -8,6 +10,7 @@ letsCookBtn.addEventListener('click', function() {
   event.preventDefault();
   getSelectedDish();
   hideCookpot();
+  showPrompt();
 });
 
 function getSelectedDish() {
@@ -20,6 +23,10 @@ function getSelectedDish() {
 
 function hideCookpot() {
   cookpot.classList.add('hidden');
+}
+
+function showPrompt() {
+  dishPrompt.classList.remove('hidden');
 }
 
 function getRandomDish(dishType) {
