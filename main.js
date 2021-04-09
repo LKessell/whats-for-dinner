@@ -6,6 +6,7 @@ var dishResult = document.querySelector('.dish-result');
 var cookpot = document.querySelector('.cookpot');
 
 var displayedDish;
+var displayedMeal = [];
 
 
 letsCookBtn.addEventListener('click', function() {
@@ -17,8 +18,11 @@ letsCookBtn.addEventListener('click', function() {
 
 function getDishSelection() {
   for (var i = 0; i < radioButtons.length; i++) {
-    if (radioButtons[i].checked) {
+    if (radioButtons[i].checked && radioButtons[i].value !== 'meal') {
       return eval(radioButtons[i].value);
+    } else {
+      console.log('Got meal time!');
+      return 'meal';
     }
   }
 }
@@ -37,6 +41,15 @@ function getRandomDish(dishType) {
 }
 
 function displayDish() {
-  displayedDish = getRandomDish(getDishSelection());
-  dishResult.innerText = displayedDish + "!";
+  if (getDishSelection() === 'meal') {
+    displayMeal();
+  } else {
+    displayedDish = getRandomDish(getDishSelection());
+    dishResult.innerText = displayedDish + "!";
+  }
+}
+
+function displayMeal() {
+  displayedMeal.push(getRandomDish(mains), getRandomDish(sides), getRandomDish(desserts));
+  console.log(displayedMeal);
 }
