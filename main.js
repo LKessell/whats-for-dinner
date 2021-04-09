@@ -51,5 +51,5 @@ function displayDish() {
 
 function displayMeal() {
   displayedMeal.push(getRandomDish(mains), getRandomDish(sides), getRandomDish(desserts));
-  console.log(displayedMeal);
+  dishResult.innerText = `${displayedMeal[0]} with a side of ${displayedMeal[1]} and ${displayedMeal[2]} for dessert!`;
 }
