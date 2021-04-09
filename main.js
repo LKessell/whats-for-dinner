@@ -38,5 +38,5 @@ function getRandomDish(dishType) {
 
 function displayDish() {
   displayedDish = getRandomDish(getDishSelection());
-  dishResult.innerText = displayedDish;
+  dishResult.innerText = displayedDish + "!";
 }
