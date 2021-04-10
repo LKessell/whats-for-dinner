@@ -25,23 +25,24 @@ main {
 
 section {
   background-color: rgba(225, 225, 225, .9);
-  height: 420px;
-  width: 520px;
+  height: 410px;
+  width: 510px;
 }
 
 fieldset {
   border: none;
-  margin: 75px 0px 0px 20px;
+  margin: 75px 0px 0px 25px;
 }
 
 legend {
   font-size: 30px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 label {
   font-size: 20px;
-  line-height: 48px;
+  line-height: 46px;
 }
 
 .hidden {
@@ -59,10 +60,11 @@ label {
   border: none;
   border-radius: 5px;
   padding: 10px 50px 10px 50px;
-  font-size: 16px;
+  font-size: 15px;
+  margin-top: 11px;
 }
 
-.random-dish {
+.random-dishes {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,12 +87,12 @@ label {
   font-size: 46px;
   font-weight: bold;
   margin: 0px;
+  text-align: center;
 }
 
 .entire-meal {
   font-size: 26px;
   margin: 30px 50px 30px 50px;
-  text-align: center;
 }
 
 
