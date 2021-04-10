@@ -1,5 +1,6 @@
 var letsCookBtn = document.querySelector('#lets-cook');
 var radioButtons = document.querySelectorAll('input[name="dish_type"]');
+var clearBtn = document.querySelector('#clear');
 var dishPrompt = document.querySelector('#should-make');
 var dishResult = document.querySelector('#dish-result');
 
@@ -10,8 +11,7 @@ var displayedDish;
 
 letsCookBtn.addEventListener('click', function() {
   event.preventDefault();
-  hideCookpot();
-  showPrompt();
+  changeDishView();
   displayDish();
 });
 
@@ -24,6 +24,12 @@ function getDishSelection() {
       return eval(radioButtons[i].value);
     }
   }
+}
+
+function changeDishView() {
+  hideCookpot();
+  showPrompt();
+  clearBtn.classList.remove('hidden');
 }
 
 function hideCookpot() {
