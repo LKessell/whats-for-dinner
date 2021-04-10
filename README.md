@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - <a href="#overview">Overview</a>
-- <a href="#how-to-use">How to Use the App</a>
+- <a href="#how-to-use-app">How to Use the App</a>
 - <a href="#technologies-used">Technologies Used</a>
 - <a href="#contributors">Contributors</a>
 - <a href="#future-additions">Future Additions</a>
@@ -16,7 +16,9 @@ This Solo Challenge was the first opportunity to create a project utilizing HTML
 - Adhering to SRP and DRY principles while writing code
 - Reinforcing DOM manipulation skills
 
-## <a id="#how-to-use">How to Use the App</a>
+## <a id="#how-to-use-app">How to Use the App</a>
+
+![READMEgif2](https://user-images.githubusercontent.com/77205456/114279508-10101180-9a03-11eb-8399-76bbdc0304b3.gif)
 
 [Access the App Here!](https://lkessell.github.io/whats-for-dinner/)
 
