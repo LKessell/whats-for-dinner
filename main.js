@@ -15,6 +15,8 @@ letsCookBtn.addEventListener('click', function() {
   displayDish();
 });
 
+clearBtn.addEventListener('click', clearDish);
+
 
 function getDishSelection() {
   for (var i = 0; i < radioButtons.length; i++) {
@@ -58,4 +60,11 @@ function displayDish() {
 function displayMeal() {
   dishResult.classList.add('entire-meal');
   dishResult.innerText = `${getRandomDish(mains)} with a side of ${getRandomDish(sides)} and ${getRandomDish(desserts)} for dessert!`;
+}
+
+function clearDish() {
+  cookpot.classList.remove('hidden');
+  dishPrompt.classList.add('hidden');
+  dishResult.innerText = '';
+  clearBtn.classList.add('hidden');
 }
