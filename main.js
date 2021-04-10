@@ -1,9 +1,9 @@
-var letsCookBtn = document.querySelector('.submit');
+var letsCookBtn = document.querySelector('#lets-cook');
 var radioButtons = document.querySelectorAll('input[name="dish_type"]');
-var dishPrompt = document.querySelector('.dish-prompt');
-var dishResult = document.querySelector('.dish-result');
+var dishPrompt = document.querySelector('#should-make');
+var dishResult = document.querySelector('#dish-result');
 
-var cookpot = document.querySelector('.cookpot');
+var cookpot = document.querySelector('#cookpot');
 
 var displayedDish;
 
