@@ -1,23 +1,26 @@
 # What's for Dinner?
 
+## Table of Contents
+
 ## Overview
 
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
+This Solo Challenge was the first opportunity to create a project utilizing HTML, CSS, and JavaScript from scratch, as well as building the HTML and CSS to match a provided comp. We were also able to personalize our projects by choosing from a selection of extensions to complete. Specific technical goals included:
+- Writing semantic HTML
+- Listening and responding to user events
+- Adhering to SRP and DRY principles while writing code
+- Reinforcing DOM manipulation skills
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+## How to Use the App
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
+Make planning your next meal simple! Select the desired type of dish and click the Let's Cook! button to generate a random dish of that type. Selecting the Entire Meal option will generate a random side, main dish, and dessert to inspire a full meal. Keep clicking for more randomly-generated inspiration.
 
-## Learning Goals
+## Technologies Used
+- HTML
+- CSS
+- Vanilla JavaScript
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+## Contributors
+- [Lauren Kessell](https://github.com/LKessell) Front-End 2103 student at Turing School of Software and Design
 
-## Setup
-
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+## Special Thanks
+- 
