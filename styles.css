@@ -107,6 +107,13 @@ button {
   margin: 30px 50px 30px 50px;
 }
 
+.error {
+  font-size: 14px;
+  color: #ee5253;
+  text-align: center;
+  margin-top: 0px;
+}
+
 
 
 /* COLORS
