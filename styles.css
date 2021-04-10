@@ -45,6 +45,12 @@ label {
   line-height: 46px;
 }
 
+button {
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
 .hidden {
   display: none;
 }
@@ -57,11 +63,17 @@ label {
 
 .submit {
   background-color: #0fb9b1;
-  border: none;
-  border-radius: 5px;
   padding: 10px 50px 10px 50px;
-  font-size: 15px;
   margin-top: 11px;
+}
+
+.clear {
+  background-color: #95a5a6;
+  color: #ffffff;
+  padding: 10px 15px 10px 15px;
+  position: relative;
+  left: 185px;
+  top: 85px;
 }
 
 .random-dishes {
