@@ -18,6 +18,8 @@ This Solo Challenge was the first opportunity to create a project utilizing HTML
 
 ## <a id="#how-to-use">How to Use the App</a>
 
+[Access the App Here!](https://lkessell.github.io/whats-for-dinner/)
+
 Make planning your next meal simple! Select the desired type of dish and click the Let's Cook! button to generate a random dish of that type. Selecting the Entire Meal option will generate a random side, main dish, and dessert to inspire a full meal. Keep clicking for more randomly-generated inspiration.
 
 ## <a id="#technologies-used">Technologies Used</a>
