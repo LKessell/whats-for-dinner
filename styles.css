@@ -71,9 +71,9 @@ button {
   background-color: #95a5a6;
   color: #ffffff;
   padding: 10px 15px 10px 15px;
-  position: relative;
-  left: 185px;
-  top: 85px;
+  position: fixed;
+  left: 84%;
+  top: 60%;
 }
 
 .random-dishes {
