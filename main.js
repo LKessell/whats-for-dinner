@@ -15,9 +15,12 @@ letsCookBtn.addEventListener('click', function() {
   displayDish();
 });
 
+
 function getDishSelection() {
   for (var i = 0; i < radioButtons.length; i++) {
-    if (radioButtons[i].checked) {
+    if (radioButtons[i].checked && radioButtons[i].value === 'meal') {
+      return 'meal';
+    } else if (radioButtons[i].checked) {
       return eval(radioButtons[i].value);
     }
   }
@@ -37,6 +40,16 @@ function getRandomDish(dishType) {
 }
 
 function displayDish() {
-  displayedDish = getRandomDish(getDishSelection());
-  dishResult.innerText = displayedDish + "!";
+  if (getDishSelection() === 'meal') {
+    displayMeal();
+  } else {
+    displayedDish = getRandomDish(getDishSelection());
+    dishResult.classList.remove('entire-meal');
+    dishResult.innerText = displayedDish + "!";
+  }
+}
+
+function displayMeal() {
+  dishResult.classList.add('entire-meal');
+  dishResult.innerText = `${getRandomDish(mains)} with a side of ${getRandomDish(sides)} and ${getRandomDish(desserts)} for dessert!`;
 }
