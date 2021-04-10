@@ -16,13 +16,13 @@ letsCookBtn.addEventListener('click', function() {
   displayDish();
 });
 
+// This returns sides, mains, desserts, or meal
 function getDishSelection() {
   for (var i = 0; i < radioButtons.length; i++) {
-    if (radioButtons[i].checked && radioButtons[i].value !== 'meal') {
-      return eval(radioButtons[i].value);
-    } else {
-      console.log('Got meal time!');
+    if (radioButtons[i].checked && radioButtons[i].value === 'meal') {
       return 'meal';
+    } else if (radioButtons[i].checked) {
+      return eval(radioButtons[i].value);
     }
   }
 }
@@ -51,5 +51,6 @@ function displayDish() {
 
 function displayMeal() {
   displayedMeal.push(getRandomDish(mains), getRandomDish(sides), getRandomDish(desserts));
+  // dishResult.classList.add('entire-meal');
   dishResult.innerText = `${displayedMeal[0]} with a side of ${displayedMeal[1]} and ${displayedMeal[2]} for dessert!`;
 }
