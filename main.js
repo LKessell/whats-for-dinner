@@ -6,7 +6,6 @@ var dishResult = document.querySelector('.dish-result');
 var cookpot = document.querySelector('.cookpot');
 
 var displayedDish;
-var displayedMeal = [];
 
 
 letsCookBtn.addEventListener('click', function() {
@@ -16,7 +15,7 @@ letsCookBtn.addEventListener('click', function() {
   displayDish();
 });
 
-// This returns sides, mains, desserts, or meal
+
 function getDishSelection() {
   for (var i = 0; i < radioButtons.length; i++) {
     if (radioButtons[i].checked && radioButtons[i].value === 'meal') {
@@ -45,12 +44,12 @@ function displayDish() {
     displayMeal();
   } else {
     displayedDish = getRandomDish(getDishSelection());
+    dishResult.classList.remove('entire-meal');
     dishResult.innerText = displayedDish + "!";
   }
 }
 
 function displayMeal() {
-  displayedMeal.push(getRandomDish(mains), getRandomDish(sides), getRandomDish(desserts));
-  // dishResult.classList.add('entire-meal');
-  dishResult.innerText = `${displayedMeal[0]} with a side of ${displayedMeal[1]} and ${displayedMeal[2]} for dessert!`;
+  dishResult.classList.add('entire-meal');
+  dishResult.innerText = `${getRandomDish(mains)} with a side of ${getRandomDish(sides)} and ${getRandomDish(desserts)} for dessert!`;
 }
