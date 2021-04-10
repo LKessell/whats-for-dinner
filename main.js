@@ -1,7 +1,9 @@
 var letsCookBtn = document.querySelector('#lets-cook');
 var radioButtons = document.querySelectorAll('input[name="dish_type"]');
+var clearBtn = document.querySelector('#clear');
 var dishPrompt = document.querySelector('#should-make');
 var dishResult = document.querySelector('#dish-result');
+var errorMsg = document.querySelector('#form-error');
 
 var cookpot = document.querySelector('#cookpot');
 
@@ -10,10 +12,10 @@ var displayedDish;
 
 letsCookBtn.addEventListener('click', function() {
   event.preventDefault();
-  hideCookpot();
-  showPrompt();
   displayDish();
 });
+
+clearBtn.addEventListener('click', clearDish);
 
 
 function getDishSelection() {
@@ -24,6 +26,14 @@ function getDishSelection() {
       return eval(radioButtons[i].value);
     }
   }
+  return false;
+}
+
+function changeDishView() {
+  hideCookpot();
+  showPrompt();
+  clearBtn.classList.remove('hidden');
+  errorMsg.classList.add('hidden');
 }
 
 function hideCookpot() {
@@ -40,9 +50,13 @@ function getRandomDish(dishType) {
 }
 
 function displayDish() {
-  if (getDishSelection() === 'meal') {
+  if (!getDishSelection()) {
+    displayError();
+  } else if (getDishSelection() === 'meal') {
+    changeDishView();
     displayMeal();
   } else {
+    changeDishView();
     displayedDish = getRandomDish(getDishSelection());
     dishResult.classList.remove('entire-meal');
     dishResult.innerText = displayedDish + "!";
@@ -52,4 +66,15 @@ function displayDish() {
 function displayMeal() {
   dishResult.classList.add('entire-meal');
   dishResult.innerText = `${getRandomDish(mains)} with a side of ${getRandomDish(sides)} and ${getRandomDish(desserts)} for dessert!`;
+}
+
+function clearDish() {
+  cookpot.classList.remove('hidden');
+  dishPrompt.classList.add('hidden');
+  dishResult.innerText = '';
+  clearBtn.classList.add('hidden');
+}
+
+function displayError() {
+  errorMsg.classList.remove('hidden');
 }
