@@ -18,11 +18,12 @@ This Solo Challenge was the first opportunity to create a project utilizing HTML
 
 ## <a id="how-to-use-app">How to Use the App</a>
 
-![READMEgif2](https://user-images.githubusercontent.com/77205456/114279508-10101180-9a03-11eb-8399-76bbdc0304b3.gif)
+![updatedREADME](https://user-images.githubusercontent.com/77205456/114324149-98bbaa00-9af6-11eb-8cde-bb4276894da6.gif)
 
 [Access the App Here!](https://lkessell.github.io/whats-for-dinner/)
 
-Make planning your next meal simple! Select the desired type of dish and click the Let's Cook! button to generate a random dish of that type. Selecting the Entire Meal option will generate a random side, main dish, and dessert to inspire a full meal. Keep clicking for more randomly-generated inspiration.
+Make planning your next meal simple! Select the desired type of dish and click the Let's Cook! button to generate a random dish of that type. Selecting the Entire Meal option will generate a random side, main dish, and dessert to inspire a full meal. Keep clicking for more randomly-generated inspiration.  
+To clear the currently displayed dish, click the Clear button.
 
 ## <a id="technologies-used">Technologies Used</a>
 - HTML
@@ -38,5 +39,6 @@ Make planning your next meal simple! Select the desired type of dish and click t
 - Delete Recipe: Allow users to delete recipes
 
 ## <a id="special-thanks">Special Thanks</a>
-- [Kayla Wood](https://github.com/kaylaewood) - Instructor and Project Manager; Thank you for sharing your infectious love of CSS!
-- Zach Johnson - Mod 2 Mentor; Thank you for your coding wisdom and excellent ReadMe advice!
+- [Kayla Wood](https://github.com/kaylaewood) - Instructor and Project Manager; Thank you for sharing your infectious love of CSS
+- Zach Johnson - Mod 2 Mentor; Thank you for your coding wisdom and excellent ReadMe advice
+- [Foster Taylor](https://github.com/foster55f) - Mentor; Thank you for sharing your insight and thorough testing
