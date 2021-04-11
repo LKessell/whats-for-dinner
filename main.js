@@ -1,11 +1,11 @@
 var letsCookBtn = document.querySelector('#lets-cook');
-var radioButtons = document.querySelectorAll('input[name="dish_type"]');
+var radioButtons = document.querySelectorAll('input[name="dish-type"]');
 var clearBtn = document.querySelector('#clear');
 var dishPrompt = document.querySelector('#should-make');
-var dishResult = document.querySelector('#dish-result');
+var dishResult = document.querySelector('#dish-result-txt');
 var errorMsg = document.querySelector('#form-error');
 
-var cookpot = document.querySelector('#cookpot');
+var cookpot = document.querySelector('#cookpot-img');
 
 var displayedDish;
 
