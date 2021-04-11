@@ -8,17 +8,17 @@
       <h1>What's for Dinner?</h1>
     </nav>
     <main>
-      <section class="dish-selection" id="dish-selection">
+      <section class="dish-selection">
         <form>
           <fieldset>
            <legend>What are you looking for?<span class="asterisk">*</span></legend>
-           <input type="radio" name="dish_type" value="sides" id="side">
+           <input type="radio" name="dish-type" value="sides">
            <label for="side">Side</label><br>
-           <input type="radio" name="dish_type" value="mains" id="main">
+           <input type="radio" name="dish-type" value="mains">
            <label for="main">Main Dish</label><br>
-           <input type="radio" name="dish_type" value="desserts" id="dessert">
+           <input type="radio" name="dish-type" value="desserts">
            <label for="dessert">Dessert</label><br>
-           <input type="radio" name="dish_type" value="meal" id="meal">
+           <input type="radio" name="dish-type" value="meal">
            <label for="meal">Entire Meal</label><br>
            <button class="submit" id="lets-cook">LET'S COOK!</button>
           </fieldset>
@@ -27,8 +27,8 @@
       </section>
       <section class="random-dishes">
         <p class="dish-prompt hidden" id="should-make">You should make:</p>
-        <p class="dish-result" id="dish-result"></p>
-        <img src="assets/cookpot.svg" alt="a cookput graphic" class="cookpot" id="cookpot">
+        <p class="dish-result" id="dish-result-txt"></p>
+        <img src="assets/cookpot.svg" alt="a cookput graphic" class="cookpot" id="cookpot-img">
         <button class="clear hidden" id="clear">CLEAR</button>
       </section>
     </main>
